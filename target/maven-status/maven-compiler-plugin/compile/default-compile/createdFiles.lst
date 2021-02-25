@@ -1,0 +1,7 @@
+org/example/JPAtest/City.class
+org/example/JPAtest/CityRepository.class
+org/example/JPAtest/Controller.class
+org/example/JPAtest/Person.class
+org/example/JPAtest/PersonView.class
+org/example/JPAtest/PersonRepository.class
+org/example/JPAtest/App.class
