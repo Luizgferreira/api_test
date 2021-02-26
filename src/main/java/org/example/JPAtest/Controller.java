@@ -34,9 +34,10 @@ public class Controller {
 
     @RequestMapping(method = RequestMethod.POST, value = "/person")
     public Person createPerson(@RequestBody PersonView personView){
-        City city = cityRepository.findById(personView.getCity()).orElse(null);
+        //City city = new City(personView.getCity(), "", "");
         Person person = new Person(personView.getName(),
-                personView.getAge(), city);
+                personView.getAge());
+        person.setCity(new City(personView.getCity(), "", ""));
         return personRepository.save(person);
     }
 

@@ -16,10 +16,18 @@ public class Person {
     }
 
     public Person(String name, int age, City city) {
-        //this.id = id;
+        //super();
         this.name = name;
         this.age = age;
         this.city = city;
+    }
+
+    public Person(String name, int age) {
+        //super();
+        //this.id = id;
+        this.name = name;
+        this.age = age;
+        //this.city = city;
     }
 
     public int getId() {
